@@ -3,8 +3,33 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1700px)
+  .main-head
+    padding-left: 20px
+    padding-right: 20px
+
+@media (max-width: 1600px)
+  .main-head
+    .logo
+      img
+        width: 300px
+
+@media (max-width: 1500px)
+  .main-mnu
+    li
+      margin-right: 40px
+
+  .btn
+    width: 200px
+
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .hamburger
+    display: inline-block 
+
+  .main-mnu
+    display: none
 
 // ≥992px
 +media-breakpoint-down(md)
@@ -12,8 +37,26 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .mm-logo
+    max-width: 320px
+
+  .right-wrapper
+    .btn
+      display: none
+
+  .main-head
+    .logo
+      img
+        width: 240px
+
 // ≥480px
 +media-breakpoint-down(xs)
+  .mm-logo
+    max-width: 280px
+
+@media (max-width: 390px)
+  .mm-logo
+    max-width: 220px
 
 
 /*==========  Mobile First  ==========*/

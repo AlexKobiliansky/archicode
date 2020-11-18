@@ -67,4 +67,26 @@ ul
   display: none!important
 // ======= END TEMPLATE STYLES =======
 
+.btn
+  display: inline-block
+  white-space: nowrap
+  text-align: center
+  cursor: pointer
+  border-width: 1px
+  border-style: solid
+  font-weight: 500
+  +mt(.3s)
+  padding: 12px
+  width: 226px
+  line-height: 1
 
+.btn-transparent
+  color: $text
+  border-color: $text
+  background-color: transparent
+  &:focus, &:active
+    color: $text
+    background-color: transparent
+  &:hover
+    background-color: $text
+    color: #fff
