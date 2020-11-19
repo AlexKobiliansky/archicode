@@ -125,20 +125,28 @@ $(document).ready(function(){
         }
     });
 
-
-
-
-
-
-
-
     owl.on('changed.owl.carousel', function(e) {
 
         let currentItem = e.item.index + 1;
         $introCurrent.text(currentItem);
 
         drawCircle();
-    })
+    });
+
+    var waypoints = $('.nums-wrap').waypoint(function(direction) {
+        $('.num-item-val').each(function(){
+            var $val = $(this).data("value");
+            $(this).animateNumber(
+                {
+                    number: $val,
+                },
+                2600
+            );
+        });
+        this.destroy();
+    }, {
+        offset: '50%'
+    });
 
 
 
