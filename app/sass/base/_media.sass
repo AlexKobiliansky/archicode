@@ -196,6 +196,34 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-form
+    padding: 75px 0
+
+  form
+    .section-title
+      font-size: 40px
+    .btn-wrap
+      width: 100%
+    .btn
+      margin-top: 10px
+      width: 100%
+
+  .label-checkbox
+    padding: 0 50px
+
+  .form-desc
+    padding: 0 50px
+
+  .form-labels-wrap
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    padding: 0 150px
+    label
+      width: 100%
+      margin-bottom: 20px
+
+
   .advantages-wrap
     grid-template-columns: repeat(2, 1fr)
 
@@ -232,6 +260,16 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+
+  .form-desc
+    padding: 0
+
+  .form-labels-wrap
+    padding: 0
+
+  .label-checkbox
+    padding: 0
+
   .section-title
     font-size: 32px
 
@@ -256,6 +294,21 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  form
+    .section-title
+      font-size: 32px
+
+  .form-desc
+    font-size: 14px
+
+  .label-checkbox
+    padding: 0 25px
+    span
+      font-size: 12px
+
+  .form-labels-wrap
+    padding: 0 25px
 
   .advantages-wrap
     grid-template-columns: repeat(1, 1fr)
@@ -307,6 +360,16 @@
     max-width: 280px
 
 @media (max-width: 390px)
+
+  form
+    .section-title
+      font-size: 24px
+
+  .label-checkbox
+    padding: 0
+
+  .form-labels-wrap
+    padding: 0
 
   .section-title
     font-size: 28px

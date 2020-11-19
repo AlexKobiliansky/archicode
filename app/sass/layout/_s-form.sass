@@ -1,0 +1,95 @@
+.s-form
+  padding: 115px 0 130px
+  position: relative
+  color: #fff
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: #000
+    opacity: .6
+
+
+form
+  position: relative
+  display: block
+  max-width: 933px
+  margin: 0 auto
+  .section-title
+    color: #fff
+    margin-bottom: 15px
+    font-size: 42px
+    &:after
+      background-color: #fff
+  label
+    margin-bottom: 0
+    display: block
+  input
+    width: 100%
+    font-size: 18px
+    line-height: 1
+    padding: 9px 22px 10px
+    background-color: transparent
+    border: 2px solid #fff
+    color: #fff
+    &::placeholder
+      color: #fff
+    &.error
+      color: red!important
+      border-color: red!important
+      &::placeholder
+        color: red!important
+  .btn
+    width: 244px
+    font-size: 18px
+  .help-block
+    display: none!important
+
+
+.form-desc
+  text-align: center
+  margin-bottom: 35px
+  padding: 0 120px
+
+.form-labels-wrap
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  margin-bottom: 20px
+  label
+    width: calc((100% - 304px)/2)
+    span
+      display: inline-block
+      line-height: 1
+      margin-bottom: 15px
+      sup
+        color: red
+
+.jq-checkbox
+  width: 17px
+  height: 17px
+  border-radius: 2px
+  background: transparent
+  border-color: #fff!important
+  margin-right: 10px
+
+.jq-checkbox.checked .jq-checkbox__div
+  border-color: #fff
+  width: 9px
+  height: 5px
+
+.label-checkbox
+  display: flex
+  align-items: center
+  span
+    font-size: 14px
+    width: calc(100% - 27px)
+    line-height: 1.2
+    a
+      color: #fff
+      text-decoration: underline
+      &:hover
+        text-decoration: none
