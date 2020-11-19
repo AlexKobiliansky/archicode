@@ -1,0 +1,276 @@
+.s-intro
+  height: 100vh
+  min-height: 550px
+  position: relative
+  .main-head
+    position: absolute
+    z-index: 3
+    left: 0
+    top: 0
+    width: 100%
+    border: none
+    .btn
+      color: #fff
+      border-color: #fff
+  .main-mnu
+    a
+      color: #fff
+      &:after
+        background-color: #fff
+  .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+    background-color: #fff!important
+
+.intro-slider
+  height: 100%
+  position: relative
+  .owl-stage-outer
+    height: 100%
+  .owl-stage
+    height: 100%
+  .owl-item
+    height: 100%
+    overflow: hidden
+    &.active
+      img
+        animation: imageAnimation 36s linear infinite 0s
+  .animated
+    animation-duration: 2400ms
+  .owl-nav
+    position: absolute
+    width: 100%
+    left: 0
+    top: calc(50% - 33px)
+    button.owl-prev, button.owl-next
+      width: 66px
+      height: 66px
+      border: 1px solid #fff
+      border-radius: 50%
+      background-image: url('../img/icons/slider-arrow-white.svg')
+      background-size: 20px 20px
+      background-position: center center
+      background-repeat: no-repeat
+      cursor: pointer
+      position: absolute
+      z-index: 4
+      +mt(.3s)
+      &:hover
+        background-color: rgba($text, .35)
+    button.owl-prev
+      transform: rotate(180deg)
+      left: 87px
+    button.owl-next
+      right: 87px
+  .owl-dots
+    display: flex
+    flex-direction: column
+    position: absolute
+    z-index: 3
+    top: 50%
+    right: 440px
+    transform: translateY(-50%)
+    button.owl-dot
+      width: 15px
+      height: 15px
+      border-radius: 50%
+      border: 1px solid #fff
+      margin-bottom: 34px
+      position: relative
+      canvas
+        opacity: 0
+        position: absolute
+        left: calc(50% - 18px)
+        top: calc(50% - 18px)
+
+      &.active
+        background-color: #fff
+        canvas
+          opacity: 1
+
+
+.intro-slide
+  position: relative
+  height: 100%
+  color: #fff
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background-color: rgba(#000, .55)
+  img
+    position: absolute
+    width: 100%
+    height: 100%
+    object-fit: cover
+    animation: imageAnimation 36s linear infinite 0s
+  &-content
+    position: relative
+    z-index: 2
+    height: 100%
+    padding: 105px 0 150px
+  .container
+    height: 100%
+  &-text
+    width: 50%
+    height: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    flex-direction: column
+  h1
+    font-family: "CormorantGaramond", sans-serif
+    font-size: 104px
+    line-height: .95
+    font-weight: 350
+    margin-bottom: 20px
+  &-desc
+    font-size: 18px
+    margin-bottom: 40px
+  .btn
+    color: #fff
+    border-color: #fff
+    font-size: 18px
+    width: 246px
+    padding: 14px
+
+
+
+@keyframes imageAnimation
+  0%
+    animation-timing-function: ease-in
+  8%
+    transform: scale(1.05)
+    animation-timing-function: ease-out
+  17%
+    transform: scale(1.1)
+  25%
+    transform: scale(1.1)
+  55%
+    transform: scale(1)
+  76%
+    transform: scale(1.1)
+  85%
+    transform: scale(1.1)
+
+
+.intro-count
+  position: absolute
+  font-size: 90px
+  line-height: 1
+  color: #fff
+  right: 223px
+  top: calc(50% - 45px)
+  z-index: 2
+
+.intro-socials
+  position: absolute
+  right: 120px
+  bottom: 55px
+  z-index: 2
+  font-size: 0
+  .soc-item
+    display: inline-block
+    margin-right: 13px
+    &:last-child
+      margin-right: 0
+    .svg
+      width: 40px
+      height: 40px
+      fill: #fff
+      +mt(.3s)
+    &:hover
+      .svg
+        fill: darkgoldenrod
+
+
+.intro-mouse
+  position: absolute
+  z-index: 2
+  bottom: 168px
+  left: 50%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  color: #fff
+  font-size: 12px
+  line-height: 1.85
+  animation: mouseAnimation 20s linear infinite 5s
+  span
+    animation: mouseSpanAnimation 20s linear infinite 5s
+  .svg
+    width: auto
+    height: 34px
+    fill: #fff
+    margin-right: 10px
+    animation: mouseSvgAnimation 20s linear infinite 5s
+  &:after
+    content: ''
+    position: absolute
+    height: 172px
+    top: calc(100% - 4px)
+    left: 17px
+    width: 1px
+    background-color: #fff
+    animation: mouseAfterAnimation 20s linear infinite 5s
+
+
+
+@keyframes mouseAnimation
+  20%
+    bottom: 168px
+  30%
+    bottom: 30px
+  70%
+    bottom: 30px
+  80%
+    bottom: 168px
+  100%
+    bottom: 168px
+
+@keyframes mouseSvgAnimation
+  20%
+    fill: #fff
+  30%
+    fill: darkgoldenrod
+  70%
+    fill: darkgoldenrod
+  80%
+    fill: #fff
+  100%
+    fill: #fff
+
+@keyframes mouseAfterAnimation
+  20%
+    background-color: #fff
+    height: 172px
+  30%
+    background-color: darkgoldenrod
+    height: 34px
+  70%
+    background-color: darkgoldenrod
+    height: 34px
+  80%
+    background-color: #fff
+    height: 172px
+  100%
+    background-color: #fff
+    height: 172px
+
+
+@keyframes mouseSpanAnimation
+  15%
+    opacity: 1
+  20%
+    opacity: 0
+  80%
+    opacity: 0
+  85%
+    opacity: 1
+
+
+
+
+
+

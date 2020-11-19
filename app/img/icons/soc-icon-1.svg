@@ -1,19 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 740 740" style="enable-background:new 0 0 740 740;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#385C8E;}
-</style>
-<g>
-	<path class="st0" d="M365.6,761c-49.9,0-98.4-9.8-144-29.1c-44.1-18.6-83.6-45.3-117.6-79.3c-34-34-60.7-73.5-79.3-117.6
-		C5.4,489.4-4.4,441-4.4,391c0-49.9,9.8-98.4,29.1-144c18.6-44.1,45.3-83.6,79.3-117.6c34-34,73.5-60.7,117.6-79.3
-		c45.6-19.3,94.1-29.1,144-29.1s98.4,9.8,144,29.1c44.1,18.6,83.6,45.3,117.6,79.3c34,34,60.7,73.5,79.3,117.6
-		c19.3,45.6,29.1,94.1,29.1,144c0,49.9-9.8,98.4-29.1,144c-18.6,44.1-45.3,83.6-79.3,117.6c-34,34-73.5,60.7-117.6,79.3
-		C464,751.2,415.5,761,365.6,761z M365.6,51c-187.5,0-340,152.5-340,340s152.5,340,340,340s340-152.5,340-340S553,51,365.6,51z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (1.0+r73+1)"
+   height="740"
+   width="740"
+   sodipodi:docname="facebook (1).svg"
+   xml:space="preserve"
+   viewBox="0 0 740 740"
+   y="0px"
+   x="0px"
+   id="Слой_1"
+   version="1.1"><metadata
+   id="metadata74"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs72" /><sodipodi:namedview
+   inkscape:current-layer="Слой_1"
+   inkscape:window-maximized="1"
+   inkscape:window-y="27"
+   inkscape:window-x="0"
+   inkscape:cy="324.82163"
+   inkscape:cx="637.77714"
+   inkscape:zoom="0.76730641"
+   showgrid="false"
+   id="namedview70"
+   inkscape:window-height="978"
+   inkscape:window-width="1920"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   bordercolor="#666666"
+   pagecolor="#ffffff" />
+
+<g
+   transform="translate(4.4,-21)"
+   id="g65">
+	<path
+   id="path63"
+   d="m 365.6,761 c -49.9,0 -98.4,-9.8 -144,-29.1 C 177.5,713.3 138,686.6 104,652.6 70,618.6 43.3,579.1 24.7,535 5.4,489.4 -4.4,441 -4.4,391 -4.4,341.1 5.4,292.6 24.7,247 43.3,202.9 70,163.4 104,129.4 138,95.4 177.5,68.7 221.6,50.1 267.2,30.8 315.7,21 365.6,21 c 49.9,0 98.4,9.8 144,29.1 44.1,18.6 83.6,45.3 117.6,79.3 34,34 60.7,73.5 79.3,117.6 19.3,45.6 29.1,94.1 29.1,144 0,49.9 -9.8,98.4 -29.1,144 -18.6,44.1 -45.3,83.6 -79.3,117.6 -34,34 -73.5,60.7 -117.6,79.3 -45.6,19.3 -94.1,29.1 -144,29.1 z m 0,-710 c -187.5,0 -340,152.5 -340,340 0,187.5 152.5,340 340,340 187.5,0 340,-152.5 340,-340 C 705.6,203.5 553,51 365.6,51 Z"
+   class="st0" />
 </g>
-<path class="st0" d="M258.7,416.5h43.8v180.3c0,3.6,2.9,6.4,6.4,6.4h74.2c3.6,0,6.4-2.9,6.4-6.4V417.3h50.3c3.3,0,6-2.5,6.4-5.7
-	l7.6-66.4c0.2-1.8-0.4-3.7-1.6-5c-1.2-1.4-3-2.2-4.8-2.2h-58v-41.6c0-12.5,6.8-18.9,20.1-18.9c1.9,0,37.9,0,37.9,0
-	c3.6,0,6.4-2.9,6.4-6.4v-60.9c0-3.6-2.9-6.4-6.4-6.4h-52.2c-0.4,0-1.2,0-2.4,0c-9.1,0-40.6,1.8-65.5,24.7
-	c-27.6,25.4-23.7,55.8-22.8,61v48.6h-46c-3.6,0-6.4,2.9-6.4,6.4V410C252.2,413.6,255.1,416.5,258.7,416.5z"/>
+<path
+   id="path67"
+   d="m 261.15843,412.17377 h 43.8 v 180.3 c 0,3.6 2.9,6.4 6.4,6.4 h 74.2 c 3.6,0 6.4,-2.9 6.4,-6.4 v -179.5 h 50.3 c 3.3,0 6,-2.5 6.4,-5.7 l 7.6,-66.4 c 0.2,-1.8 -0.4,-3.7 -1.6,-5 -1.2,-1.4 -3,-2.2 -4.8,-2.2 h -58 v -41.6 c 0,-12.5 6.8,-18.9 20.1,-18.9 1.9,0 37.9,0 37.9,0 3.6,0 6.4,-2.9 6.4,-6.4 v -60.9 c 0,-3.6 -2.9,-6.4 -6.4,-6.4 h -52.2 c -0.4,0 -1.2,0 -2.4,0 -9.1,0 -40.6,1.8 -65.5,24.7 -27.6,25.4 -23.7,55.8 -22.8,61 v 48.6 h -46 c -3.6,0 -6.4,2.9 -6.4,6.4 v 65.5 c 0.1,3.6 3,6.5 6.6,6.5 z"
+   class="st0" />
 </svg>
