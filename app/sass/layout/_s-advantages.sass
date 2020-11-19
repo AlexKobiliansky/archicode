@@ -1,0 +1,27 @@
+.s-advantages
+  padding: 130px 0
+  .section-title
+    margin-bottom: 50px
+
+.adv-item
+  position: relative
+  top: 0
+  +mt(1s)
+  cursor: crosshair
+  .svg
+    width: 68px
+    height: auto
+    fill: $accent
+  &-title
+    font-family: "CormorantGaramond", sans-serif
+    font-size: 32px
+    font-weight: 350
+    line-height: 1
+    margin-bottom: 10px
+  &:hover
+    top: -15px
+
+.advantages-wrap
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 70px

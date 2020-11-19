@@ -149,6 +149,9 @@ $(document).ready(function(){
     });
 
 
+    $('.project-items-tabs').tabs();
+
+
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change

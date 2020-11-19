@@ -45,6 +45,7 @@ gulp.task('scripts', function() {
 		'app/libs/jquery-circle-progress/circle-progress.min.js',
 		'app/libs/waypoints/lib/jquery.waypoints.min.js',
 		'app/libs/animate-number/jquery.animateNumber.min.js',
+		'app/libs/jqueryTabs/jquery-ui.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

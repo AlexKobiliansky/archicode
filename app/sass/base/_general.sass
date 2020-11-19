@@ -112,3 +112,106 @@ ul
     bottom: -3px
     left: 50%
     transform: translateX(-50%)
+
+.relief-top, .relief-bottom
+  position: relative
+  z-index: 2
+  .container
+    position: relative
+    z-index: 2
+  &:before, &:after
+    position: absolute
+    width: 100%
+    height: 174px
+    left: 0
+    background-image: url('../img/relief-img.png')
+    background-position: left center
+    background-repeat: no-repeat
+
+
+.relief-top
+  &:before
+    content: ''
+    top: -120px
+
+.relief-bottom
+  &:after
+    content: ''
+    bottom: -120px
+    transform: rotate(180deg)
+
+.project-items-tabs
+  margin-bottom: 40px
+  .top
+    border-bottom: 1px solid #f6f6f6
+    margin-bottom: 43px
+
+.project-tabs-controls
+  font-size: 18px
+  line-height: 1
+  font-weight: 500
+  display: flex
+  justify-content: center
+  li
+    margin: 0 40px
+    &.ui-tabs-active
+      a
+        color: $text
+        &:after
+          background-color: $text
+  a
+    display: inline-block
+    color: #898989
+    padding: 10px 0
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 1px
+      left: 0
+      bottom: 0
+      background-color: transparent
+
+.project-items-wrap
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-gap: 40px
+
+.project-item
+  position: relative
+  display: block
+  height: 385px
+  overflow: hidden
+  background-color: $text
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: $text
+    opacity: .4
+    z-index: 2
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    +mt(3s)
+  &:hover
+    img
+      transform: scale(1.1)
+  &-content
+    position: absolute
+    left: 50px
+    bottom: 43px
+    color: #fff
+    z-index: 3
+    padding-right: 30px
+  &-title
+    display: block
+    font-size: 24px
+    font-weight: 500
+  &-year
+    font-size: 18px
