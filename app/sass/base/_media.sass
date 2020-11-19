@@ -196,6 +196,18 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .foot-line
+    flex-wrap: wrap
+    padding-bottom: 20px
+
+  .bottom-line
+    flex-wrap: wrap
+
+  .dev-block
+    width: 100%
+    text-align: center
+    margin-top: 40px
+
   .s-form
     padding: 75px 0
 
@@ -295,6 +307,40 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .foot-line
+    .logo
+      margin: 0 auto 30px
+    .btn
+      margin: 0 auto 10px
+
+  .foot-contacts
+    text-align: center
+    width: 100%
+    margin-bottom: 20px
+
+  .foot-socials
+    width: 100%
+    text-align: center
+    .soc-item
+      margin: 0 4px
+
+  .copyright
+    width: 100%
+    text-align: center
+    margin-bottom: 20px
+
+  .bottom-line
+    &>a
+      display: inline-block
+      width: 100%
+      text-align: center
+      margin-bottom: 20px
+
+  .dev-block
+    margin-top: 15px
+
+
+
   form
     .section-title
       font-size: 32px
@@ -329,6 +375,9 @@
     li
       &:first-child
         margin-left: 0
+      &:last-child
+        a
+          padding-right: 20px
 
 
   .intro-slider

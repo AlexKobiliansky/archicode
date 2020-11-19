@@ -1,0 +1,64 @@
+.main-foot
+  padding-top: 40px
+
+.foot-line
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  padding-bottom: 35px
+  border-bottom: 1px solid #d1d1d1
+  .logo
+    width: 250px
+  .btn
+    margin-top: 10px
+
+.foot-contacts
+  a
+    display: block
+    color: $text
+    margin-bottom: 5px
+    &:hover
+      text-decoration: underline
+
+.foot-socials
+  margin-top: 15px
+  .soc-item
+    display: inline-block
+    margin-left: 8px
+    .svg
+      width: 40px
+      height: auto
+      fill: $text
+      +mt(.3s)
+    &:hover
+      .svg
+        fill: #898989
+
+
+.dev-block
+  .svg
+    width: 80px
+    height: auto
+    filter: brightness(0)
+    +mt(.3s)
+  a
+    position: relative
+    top: 5px
+    margin-left: 3px
+    &:hover
+      .svg
+        filter: brightness(.7)
+
+.bottom-line
+  padding: 26px 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-size: 14px
+  font-weight: 500
+  line-height: 1
+  a
+    color: #898989
+    text-decoration: underline
+    &:hover
+      text-decoration: none
