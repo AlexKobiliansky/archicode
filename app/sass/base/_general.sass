@@ -380,3 +380,44 @@ ul
   &.mfp-removing.mfp-bg
     opacity: 0
 
+
+.bg-white
+  position: relative
+  background-color: #fff
+
+.page-links-wrap
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-weight: 500
+  line-height: 1
+  padding-top: 65px
+  margin-bottom: 35px
+
+.page-link
+  color: $text
+  .svg
+    width: 14px
+    height: auto
+    display: inline-block
+    margin-right: 8px
+    position: relative
+    top: 2px
+    +mt(.3s)
+  &:hover
+    color: darkgoldenrod
+    .svg
+      fill: darkgoldenrod
+
+.page-title
+  font-family: "CormorantGaramond", sans-serif
+  font-weight: 350
+  color: $accent
+  font-size: 58px
+  line-height: 1
+  margin-bottom: 20px
+
+.page-desc
+  font-size: 18px
+  margin-bottom: 50px
+
