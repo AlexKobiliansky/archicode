@@ -190,6 +190,20 @@ $(document).ready(function(){
     });
 
 
+    $('.vac-item-head').on("click", function(){
+        var parent = $(this).parents('.vac-item');
+
+
+        parent.toggleClass('active').find('.vac-item-desc').slideToggle();
+
+        parent.siblings('.vac-item').each(function(){
+            $(this).removeClass('active');
+            $(this).find('.vac-item-desc').slideUp();
+        });
+    });
+
+
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

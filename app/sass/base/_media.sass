@@ -129,6 +129,20 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .vac-item
+    &-head
+      padding: 30px 50px 30px 30px
+      &:after
+        right: 20px
+    &-desc
+      padding: 30px
+    &-title
+      font-size: 20px
+      width: 350px
+    &-price, &-place, &-exp
+      width: calc((100% - 350px)/3)
+
+
   .s-advantages
     padding-bottom: 70px
 
@@ -210,6 +224,16 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .vac-item
+    &-title
+      font-size: 16px
+      width: 200px
+    &-price
+      font-size: 16px
+    &-exp, &-place
+      font-size: 14px
+    &-price, &-place, &-exp
+      width: calc((100% - 200px)/3)
 
   .popup-form-block
     padding: 50px
@@ -292,6 +316,25 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .vac-item
+    &-head
+      flex-wrap: wrap
+      padding-top: 15px
+      padding-bottom: 15px
+    &-title
+      width: 100%
+      margin-bottom: 10px
+    &-price, &-place, &-exp
+      width: 33.3333%
+      text-align: left
+      font-size: 12px
+    &-exp
+      padding-left: 0
+    &-price
+      padding-right: 0
+      text-align: center
+    &-desc
+      font-size: 14px
 
   .form-desc
     padding: 0
@@ -326,6 +369,21 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .vac-item
+    &-head
+      padding-left: 15px
+    &-desc
+      padding: 15px
+    &-place, &-exp
+      order: 3
+      width: 50%
+    &-price
+      order: 2
+      width: 100%
+      margin-bottom: 10px
+      text-align: left
+      padding-left: 0
 
   .page-links-wrap
     font-size: 14px

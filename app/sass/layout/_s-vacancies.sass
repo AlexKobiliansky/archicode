@@ -1,0 +1,52 @@
+.s-vacancies
+  padding-bottom: 50px
+
+.vac-item
+  margin-bottom: 24px
+  &:last-child
+    margin-bottom: 0
+  &-head
+    +mt(.3s)
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border: 1px solid $text
+    line-height: 1
+    padding: 47px 80px 47px 50px
+    cursor: pointer
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: 20px
+      height: 20px
+      background-image: url('../img/icons/slider-arrow-accent.svg')
+      +bg-cover
+      right: 38px
+      top: calc(50% - 10px)
+      transform: rotate(90deg)
+  &-title
+    font-size: 24px
+    font-weight: 600
+    width: 450px
+  &-price, &-place, &-exp
+    width: calc((100% - 450px)/3)
+    padding: 0 10px
+    text-align: center
+  &-price
+    font-size: 18px
+    font-weight: 600
+  p
+    margin-bottom: 0
+  &-desc
+    background-color: #f6f6f6
+    padding: 30px 50px
+    display: none
+  &.active
+    .vac-item-head
+      background-color: #f6f6f6
+      &:after
+        transform: rotate(-90deg)
+
+.vacancies-wrap
+  margin-bottom: 40px
