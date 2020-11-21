@@ -52,7 +52,8 @@
 
 @media (max-width: 1500px)
 
-
+  .contacts-block
+    left: 20px
 
   .intro-mouse
     bottom: 100px
@@ -128,6 +129,10 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .contacts-block
+    padding: 40px 60px 40px 40px
+    font-size: 20px
 
   .vac-item
     &-head
@@ -316,6 +321,17 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .contacts-block
+    position: relative
+    left: 0
+    top: 0
+    transform: none
+    padding: 0 calc((100vw - 510px)/2) 40px
+    font-size: 18px
+
+  #map
+    height: 500px
+
   .vac-item
     &-head
       flex-wrap: wrap
@@ -369,6 +385,17 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .contacts-block
+    position: relative
+    left: 0
+    top: 0
+    transform: none
+    padding: 0 20px 30px
+    font-size: 16px
+
+  #map
+    height: 400px
 
   .vac-item
     &-head
