@@ -51,6 +51,11 @@ gulp.task('scripts', function() {
 		'app/libs/jquery-form-validator/form-validator/jquery.form-validator.min.js',
 		'app/libs/form-styler/jquery.formstyler.min.js',
 		'app/libs/magnificPopup/jquery.magnific-popup.min.js',
+		'app/libs/photoswipe/photoswipe.min.js',
+		'app/libs/photoswipe/photoswipe-ui-default.min.js',
+		'app/libs/photoswipe/jquery.photoswipe.js',
+		'app/libs/custom-scrollbar/jquery.nicescroll.min.js',
+		'app/libs/mousewheel/jquery.mousewheel.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

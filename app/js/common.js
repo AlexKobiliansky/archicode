@@ -155,6 +155,54 @@ $(document).ready(function(){
         bleed: '50',
     });
 
+    if ($(window).width() > 1200) {
+        $('.project-desc').niceScroll({
+            cursoropacitymin: 1,
+            cursorcolor:"#552f22",
+            cursorwidth:"4px",
+            cursorborder:"",
+            cursorborderradius:"0",
+            background:"#eeeeee",railpadding: {
+                top: 0,
+                right: 0,
+                left: 0,
+                bottom: 15
+            },
+        });
+    }
+
+
+    let projectSlider = $('.project-slider').owlCarousel({
+        loop:true,
+        nav:false,
+        autoHeight: false,
+        dots: false,
+        autoWidth: true,
+        margin: 40,
+        responsive: {
+            0: {
+                margin: 20
+            },
+            480: {
+                margin: 40
+            }
+        }
+    });
+
+    projectSlider.on('mousewheel', '.owl-stage', function (e) {
+        if (e.deltaY>0) {
+            projectSlider.trigger('prev.owl', [1000]);
+        } else {
+            projectSlider.trigger('next.owl', [1000]);
+        }
+        e.preventDefault();
+    });
+
+    projectSlider.photoswipe({
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+    });
+
     $('.preloader').fadeOut();
 
 
@@ -205,6 +253,9 @@ $(document).ready(function(){
 
 
 
+
+
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
@@ -224,7 +275,6 @@ $(document).ready(function(){
         });
         return false;
     });
-
 
     function loadScript(url, callback){
         var script = document.createElement("script");
@@ -246,7 +296,6 @@ $(document).ready(function(){
         script.src = url;
         document.getElementsByTagName("head")[0].appendChild(script);
     }
-
 
     function initMap() {
         ymaps.ready(function(){
@@ -294,15 +343,10 @@ $(document).ready(function(){
                 ];
             }
 
-
-
             var geoCenter = map.options.get('projection').fromGlobalPixels(pixelCenter, map.getZoom());
 
             map.setCenter(geoCenter);
             //Смещение центра
-
-
-
 
             map.geoObjects.add(myPlacemark);
         });
