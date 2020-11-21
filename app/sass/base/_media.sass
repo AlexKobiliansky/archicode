@@ -135,6 +135,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .partner-item
+    padding: 6px 20px
+
   .team-wrap
     grid-template-columns: repeat(3, 1fr)
 
@@ -245,6 +248,10 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+
+  .partners-wrap
+    grid-gap: 20px
+
   .team-wrap
     grid-template-columns: repeat(2, 1fr)
 
@@ -343,6 +350,9 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .partners-wrap
+    grid-template-columns: repeat(3, 1fr)
+
   .team-item
     &-img
       width: 200px
@@ -412,6 +422,16 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .partners-wrap
+    grid-template-columns: repeat(2, 1fr)
+
+  .s-advantages.relief-bottom
+    &:after
+      bottom: -80px
+
+  .s-partners
+    padding-top: 80px
 
   .team-item
     &-img
@@ -582,6 +602,12 @@
     max-width: 280px
 
 @media (max-width: 390px)
+
+  .partners-wrap
+    grid-gap: 10px
+
+  .partner-item
+    padding: 6px 10px
 
   .team-wrap
     grid-template-columns: repeat(1, 1fr)
