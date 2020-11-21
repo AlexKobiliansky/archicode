@@ -52,6 +52,11 @@
 
 @media (max-width: 1500px)
 
+  .team-item
+    &-img
+      width: 200px
+      height: 200px
+
   .contacts-block
     left: 20px
 
@@ -129,6 +134,17 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .team-wrap
+    grid-template-columns: repeat(3, 1fr)
+
+  .team-item
+    &-img
+      width: 244px
+      height: 244px
+
+  .page-nums-wrap
+    padding: 0
 
   .contacts-block
     padding: 40px 60px 40px 40px
@@ -229,6 +245,12 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .team-wrap
+    grid-template-columns: repeat(2, 1fr)
+
+  .page-nums-wrap
+    grid-template-columns: repeat(2, 1fr)
+
   .vac-item
     &-title
       font-size: 16px
@@ -321,6 +343,11 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .team-item
+    &-img
+      width: 200px
+      height: 200px
+
   .contacts-block
     position: relative
     left: 0
@@ -385,6 +412,16 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .team-item
+    &-img
+      width: 150px
+      height: 150px
+      margin-bottom: 10px
+    &-title
+      font-size: 16px
+    &-desc
+      font-size: 14px
 
   .contacts-block
     position: relative
@@ -545,6 +582,19 @@
     max-width: 280px
 
 @media (max-width: 390px)
+
+  .team-wrap
+    grid-template-columns: repeat(1, 1fr)
+
+  .team-item
+    &-img
+      width: 180px
+      height: 180px
+    &-title
+      font-size: 20px
+    &-desc
+      font-size: 16px
+
 
   .nopage-content
     h1
