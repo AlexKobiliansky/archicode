@@ -1,0 +1,31 @@
+.price-item
+  display: flex
+  &-img
+    width: 820px
+    +bg-cover
+  &-content
+    padding: 60px 0 85px
+    flex: 1
+  &-title
+    font-size: 34px
+    text-align: left
+    padding-bottom: 10px
+    margin-bottom: 24px
+    &:after
+      left: 0
+      transform: none
+  &-desc
+    font-size: 14px
+    line-height: 2
+    margin-bottom: 22px
+  &:nth-child(even)
+    background-color: #f6f6f6
+    .price-item-content
+      padding-left: 120px
+      padding-right: calc((100vw - 1380px)/2)
+
+  &:nth-child(odd)
+    flex-direction: row-reverse
+    .price-item-content
+      padding-right: 240px
+      padding-left: calc((100vw - 1380px)/2)
