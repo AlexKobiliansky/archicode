@@ -162,6 +162,28 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .stage-item
+    width: 600px
+    &-img
+      width: 160px
+      height: 160px
+    &-content
+      padding-left: 15px
+    &-title
+      font-size: 18px
+    ul
+      font-size: 16px
+
+  .service-composition-wrap
+    font-size: 18px
+
+  .service-num
+    &-value
+      font-size: 50px
+
+  .gal-item
+    height: 300px
+
   .s-project
     flex-direction: column
     align-items: flex-start
@@ -297,6 +319,26 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .stage-item
+    width: 100%
+    &-content
+      padding-left: 25px
+    ul
+      li
+        padding-left: 0
+
+  .service-composition-wrap
+    font-size: 16px
+    grid-gap: 20px
+    li
+      padding-left: 40px
+      &:before
+        width: 30px
+        height: 30px
+        font-size: 20px
+        line-height: 30px
+        top: -5px
+
   .s-page
     .page-title
       font-size: 42px
@@ -402,7 +444,36 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .stage-item
+    flex-direction: column
+    &-content
+      padding-left: 0
+    &-img
+      margin-bottom: 15px
+    &-title
+      text-align: center
 
+
+  .service-composition
+    padding-bottom: 50px
+
+  .service-composition-wrap
+    grid-template-columns: repeat(1, 1fr)
+    grid-gap: 70px
+
+
+  .service-num
+    line-height: 1.2
+    &-value
+      font-size: 36px
+    &-desc
+      font-size: 14px
+
+  .service-gallery
+    grid-gap: 20px
+
+  .gal-item
+    height: 240px
 
   .partners-wrap
     grid-template-columns: repeat(3, 1fr)
@@ -476,6 +547,25 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .stages
+    padding-bottom: 50px
+
+  .s-service
+    .section-title
+      font-size: 32px
+      margin-bottom: 40px
+
+  .service-composition
+
+  .service-nums-wrap
+    padding: 35px 0
+    .wrapper
+      grid-template-columns: repeat(1, 1fr)
+
+  .service-gallery
+    grid-template-columns: repeat(1, 1fr)
+    padding: 30px 0
 
   .s-project
     .page-title
@@ -677,6 +767,16 @@
     max-width: 280px
 
 @media (max-width: 390px)
+
+  .stage-item
+    &-title
+      font-size: 16px
+      line-height: 1.2
+    ul
+      font-size: 14px
+
+  .gal-item
+    height: 200px
 
   .s-project
     .page-link

@@ -145,7 +145,7 @@ $(document).ready(function(){
         });
         this.destroy();
     }, {
-        offset: '50%'
+        offset: '75%'
     });
 
 
@@ -199,6 +199,11 @@ $(document).ready(function(){
     });
 
     projectSlider.photoswipe({
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+    });
+
+    $('.gal-item').photoswipe({
         showAnimationDuration: 0,
         hideAnimationDuration: 0
     });
